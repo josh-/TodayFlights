@@ -6,11 +6,11 @@ TodayFlights is a Notification Center widget that allows you to monitor flights 
 
 ## Installation
 
-* [Download](https://github.com/josh-/TodayFlights/releases/download/v1.0/TodayFlights.zip) and copy it to your Applications folder.
+* [Download](https://github.com/josh-/TodayFlights/releases/download/v1.0/TodayFlights.dmg) the latest DMG.
 
 ## Usage
 
-1. Download the zip file from above and extract it
+1. Download the DMG file from above and copy the TodayFlights app to the Applications folder
 2. Run the TodayFlights app
 3. Open *Notification Center*, and click "1 new" at the bottom of the panel
 4. Add the TodayFlights widget
