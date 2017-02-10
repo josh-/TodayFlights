@@ -12,6 +12,9 @@
 		034A7A941E4D33DE00619BFF /* AddFlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A7A931E4D33DE00619BFF /* AddFlightViewController.swift */; };
 		03781E211DF987B200EF1ABF /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03781E201DF987B200EF1ABF /* AppKit.framework */; };
 		03781E231DF987B600EF1ABF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03781E221DF987B600EF1ABF /* Cocoa.framework */; };
+		037BFBD71E4D68150022A75B /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037BFBD61E4D68150022A75B /* Sparkle.framework */; };
+		037BFBD91E4D686F0022A75B /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 037BFBD61E4D68150022A75B /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		037BFBDC1E4D776D0022A75B /* dsa_pub.pem in CopyFiles */ = {isa = PBXBuildFile; fileRef = 037BFBDB1E4D776D0022A75B /* dsa_pub.pem */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		038F08D01E4AAA8E0027BE91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F08CF1E4AAA8E0027BE91 /* AppDelegate.swift */; };
 		038F09021E4AAAAE0027BE91 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 038F09001E4AAAAE0027BE91 /* MainMenu.xib */; };
 		038F090C1E4AAB8A0027BE91 /* FlightUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038F090B1E4AAB8A0027BE91 /* FlightUtilities.framework */; };
@@ -51,6 +54,26 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		037BFBD81E4D68620022A75B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				037BFBD91E4D686F0022A75B /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		037BFBDA1E4D775C0022A75B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				037BFBDC1E4D776D0022A75B /* dsa_pub.pem in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +84,8 @@
 		03781DDF1DF9825800EF1ABF /* TodayFlights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayFlights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03781E201DF987B200EF1ABF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		03781E221DF987B600EF1ABF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		037BFBD61E4D68150022A75B /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		037BFBDB1E4D776D0022A75B /* dsa_pub.pem */ = {isa = PBXFileReference; lastKnownFileType = text; name = dsa_pub.pem; path = ../TodayFlights/dsa_pub.pem; sourceTree = "<group>"; };
 		038F08B71E4AA94B0027BE91 /* EditFlightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditFlightViewController.h; path = TodayFlightsWidget/EditFlightViewController.h; sourceTree = SOURCE_ROOT; };
 		038F08B81E4AA94B0027BE91 /* EditFlightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditFlightViewController.m; path = TodayFlightsWidget/EditFlightViewController.m; sourceTree = SOURCE_ROOT; };
 		038F08B91E4AA94B0027BE91 /* EditFlightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditFlightViewController.xib; path = TodayFlightsWidget/EditFlightViewController.xib; sourceTree = SOURCE_ROOT; };
@@ -142,6 +167,7 @@
 			files = (
 				03781E231DF987B600EF1ABF /* Cocoa.framework in Frameworks */,
 				03781E211DF987B200EF1ABF /* AppKit.framework in Frameworks */,
+				037BFBD71E4D68150022A75B /* Sparkle.framework in Frameworks */,
 				03E1CD111E4C22510009E28F /* MapKit.framework in Frameworks */,
 				038F090C1E4AAB8A0027BE91 /* FlightUtilities.framework in Frameworks */,
 			);
@@ -208,6 +234,7 @@
 		03781E1F1DF987B200EF1ABF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				037BFBD61E4D68150022A75B /* Sparkle.framework */,
 				03E1CD101E4C22510009E28F /* MapKit.framework */,
 				038F090B1E4AAB8A0027BE91 /* FlightUtilities.framework */,
 				036D7BF91DFAB0ED00B28048 /* NotificationCenter.framework */,
@@ -297,6 +324,7 @@
 			children = (
 				038F09081E4AAAD60027BE91 /* Info.plist */,
 				038F09091E4AAAD60027BE91 /* TodayFlights.entitlements */,
+				037BFBDB1E4D776D0022A75B /* dsa_pub.pem */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -329,6 +357,8 @@
 				03781DDC1DF9825800EF1ABF /* Frameworks */,
 				03781DDD1DF9825800EF1ABF /* Resources */,
 				036D7C0D1DFAB0ED00B28048 /* Embed App Extensions */,
+				037BFBD81E4D68620022A75B /* CopyFiles */,
+				037BFBDA1E4D775C0022A75B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -640,7 +670,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TodayFlights/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshparnham.TodayFlights;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/TodayFlights/PrivateHeaders/FlightUtilities/FUFlightViewController.h";
@@ -664,7 +694,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TodayFlights/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshparnham.TodayFlights;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/TodayFlights/PrivateHeaders/FlightUtilities/FUFlightViewController.h";

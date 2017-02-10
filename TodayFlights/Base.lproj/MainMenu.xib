@@ -32,6 +32,12 @@
                                     <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
                                 </connections>
                             </menuItem>
+                            <menuItem title="Check for Updates..." id="bUS-ad-kSE">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="checkForUpdates:" target="ikq-LY-uOu" id="bRX-3D-CVj"/>
+                                </connections>
+                            </menuItem>
                             <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
                             <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
                             <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
@@ -184,6 +190,6 @@
                 <outlet property="view" destination="Vs4-ty-8WT" id="Ogi-AL-DI5"/>
             </connections>
         </viewController>
-        <userDefaultsController representsSharedInstance="YES" id="9q1-Cx-wRW"/>
+        <customObject id="ikq-LY-uOu" customClass="SUUpdater"/>
     </objects>
 </document>
