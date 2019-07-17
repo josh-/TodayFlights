@@ -23,7 +23,7 @@ class AddFlightViewController: NSViewController, NSTextFieldDelegate {
         }
     }
 
-    override func controlTextDidChange(_ notification: Notification) {
+    func controlTextDidChange(_ notification: Notification) {
         guard let defaults = TodayFlightsUserDefaults.sharedInstance else { return }
         
         let changedField = notification.object
