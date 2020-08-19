@@ -15,9 +15,10 @@
 		037BFBD71E4D68150022A75B /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037BFBD61E4D68150022A75B /* Sparkle.framework */; };
 		037BFBD91E4D686F0022A75B /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 037BFBD61E4D68150022A75B /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		037BFBDC1E4D776D0022A75B /* dsa_pub.pem in CopyFiles */ = {isa = PBXBuildFile; fileRef = 037BFBDB1E4D776D0022A75B /* dsa_pub.pem */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0388D66E24ED4A90007BA51E /* FlightUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0388D66D24ED4A90007BA51E /* FlightUtilities.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0388D67024ED4AA4007BA51E /* FlightUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0388D66D24ED4A90007BA51E /* FlightUtilities.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		038F08D01E4AAA8E0027BE91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F08CF1E4AAA8E0027BE91 /* AppDelegate.swift */; };
 		038F09021E4AAAAE0027BE91 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 038F09001E4AAAAE0027BE91 /* MainMenu.xib */; };
-		038F090C1E4AAB8A0027BE91 /* FlightUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038F090B1E4AAB8A0027BE91 /* FlightUtilities.framework */; };
 		038F090D1E4AAF000027BE91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038F09061E4AAABD0027BE91 /* Assets.xcassets */; };
 		03E1CD111E4C22510009E28F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E1CD101E4C22510009E28F /* MapKit.framework */; };
 		03E1CD121E4C23B50009E28F /* EditFlightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 038F08B81E4AA94B0027BE91 /* EditFlightViewController.m */; };
@@ -27,7 +28,6 @@
 		03E1CD161E4C23C80009E28F /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 038F08BE1E4AA94B0027BE91 /* TodayViewController.m */; };
 		03E1CD171E4C23CC0009E28F /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 038F08CC1E4AA9810027BE91 /* TodayViewController.xib */; };
 		03E1CD181E4C23CF0009E28F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038F08C41E4AA95D0027BE91 /* Assets.xcassets */; };
-		03E1CD191E4C24010009E28F /* FlightUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038F090B1E4AAB8A0027BE91 /* FlightUtilities.framework */; };
 		03E1CD1A1E4C24E00009E28F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 038F08C91E4AA9770027BE91 /* InfoPlist.strings */; };
 		03E1CD1B1E4C24E60009E28F /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036D7BF91DFAB0ED00B28048 /* NotificationCenter.framework */; };
 /* End PBXBuildFile section */
@@ -86,6 +86,7 @@
 		03781E221DF987B600EF1ABF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		037BFBD61E4D68150022A75B /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		037BFBDB1E4D776D0022A75B /* dsa_pub.pem */ = {isa = PBXFileReference; lastKnownFileType = text; name = dsa_pub.pem; path = ../TodayFlights/dsa_pub.pem; sourceTree = "<group>"; };
+		0388D66D24ED4A90007BA51E /* FlightUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FlightUtilities.framework; path = /System/Library/PrivateFrameworks/FlightUtilities.framework; sourceTree = "<group>"; };
 		038F08B71E4AA94B0027BE91 /* EditFlightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditFlightViewController.h; path = TodayFlightsWidget/EditFlightViewController.h; sourceTree = SOURCE_ROOT; };
 		038F08B81E4AA94B0027BE91 /* EditFlightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditFlightViewController.m; path = TodayFlightsWidget/EditFlightViewController.m; sourceTree = SOURCE_ROOT; };
 		038F08B91E4AA94B0027BE91 /* EditFlightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditFlightViewController.xib; path = TodayFlightsWidget/EditFlightViewController.xib; sourceTree = SOURCE_ROOT; };
@@ -147,7 +148,6 @@
 		038F09061E4AAABD0027BE91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TodayFlights/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		038F09081E4AAAD60027BE91 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TodayFlights/Info.plist; sourceTree = SOURCE_ROOT; };
 		038F09091E4AAAD60027BE91 /* TodayFlights.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = TodayFlights.entitlements; path = TodayFlights/TodayFlights.entitlements; sourceTree = SOURCE_ROOT; };
-		038F090B1E4AAB8A0027BE91 /* FlightUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FlightUtilities.framework; sourceTree = "<group>"; };
 		03E1CD101E4C22510009E28F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -157,7 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03E1CD1B1E4C24E60009E28F /* NotificationCenter.framework in Frameworks */,
-				03E1CD191E4C24010009E28F /* FlightUtilities.framework in Frameworks */,
+				0388D67024ED4AA4007BA51E /* FlightUtilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +169,7 @@
 				03781E211DF987B200EF1ABF /* AppKit.framework in Frameworks */,
 				037BFBD71E4D68150022A75B /* Sparkle.framework in Frameworks */,
 				03E1CD111E4C22510009E28F /* MapKit.framework in Frameworks */,
-				038F090C1E4AAB8A0027BE91 /* FlightUtilities.framework in Frameworks */,
+				0388D66E24ED4A90007BA51E /* FlightUtilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,9 +234,9 @@
 		03781E1F1DF987B200EF1ABF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0388D66D24ED4A90007BA51E /* FlightUtilities.framework */,
 				037BFBD61E4D68150022A75B /* Sparkle.framework */,
 				03E1CD101E4C22510009E28F /* MapKit.framework */,
-				038F090B1E4AAB8A0027BE91 /* FlightUtilities.framework */,
 				036D7BF91DFAB0ED00B28048 /* NotificationCenter.framework */,
 				03781E221DF987B600EF1ABF /* Cocoa.framework */,
 				03781E201DF987B200EF1ABF /* AppKit.framework */,
