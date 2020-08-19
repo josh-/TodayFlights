@@ -87,6 +87,7 @@
 		037BFBD61E4D68150022A75B /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		037BFBDB1E4D776D0022A75B /* dsa_pub.pem */ = {isa = PBXFileReference; lastKnownFileType = text; name = dsa_pub.pem; path = ../TodayFlights/dsa_pub.pem; sourceTree = "<group>"; };
 		0388D66D24ED4A90007BA51E /* FlightUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FlightUtilities.framework; path = /System/Library/PrivateFrameworks/FlightUtilities.framework; sourceTree = "<group>"; };
+		0388D6A124ED53AF007BA51E /* FUFlightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUFlightViewController.h; sourceTree = "<group>"; };
 		038F08B71E4AA94B0027BE91 /* EditFlightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditFlightViewController.h; path = TodayFlightsWidget/EditFlightViewController.h; sourceTree = SOURCE_ROOT; };
 		038F08B81E4AA94B0027BE91 /* EditFlightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditFlightViewController.m; path = TodayFlightsWidget/EditFlightViewController.m; sourceTree = SOURCE_ROOT; };
 		038F08B91E4AA94B0027BE91 /* EditFlightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditFlightViewController.xib; path = TodayFlightsWidget/EditFlightViewController.xib; sourceTree = SOURCE_ROOT; };
@@ -101,49 +102,6 @@
 		038F08CA1E4AA9770027BE91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = TodayFlightsWidget/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		038F08CD1E4AA9810027BE91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = TodayFlightsWidget/Base.lproj/TodayViewController.xib; sourceTree = SOURCE_ROOT; };
 		038F08CF1E4AAA8E0027BE91 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TodayFlights/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
-		038F08D51E4AAAA60027BE91 /* CDStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDStructures.h; sourceTree = "<group>"; };
-		038F08D61E4AAAA60027BE91 /* FUAirline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUAirline.h; sourceTree = "<group>"; };
-		038F08D71E4AAAA60027BE91 /* FUAirport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUAirport.h; sourceTree = "<group>"; };
-		038F08D81E4AAAA60027BE91 /* FUErrorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUErrorView.h; sourceTree = "<group>"; };
-		038F08D91E4AAAA60027BE91 /* FUFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUFlight.h; sourceTree = "<group>"; };
-		038F08DA1E4AAAA60027BE91 /* FUFlightCodeShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUFlightCodeShare.h; sourceTree = "<group>"; };
-		038F08DB1E4AAAA60027BE91 /* FUFlightFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUFlightFactory.h; sourceTree = "<group>"; };
-		038F08DC1E4AAAA60027BE91 /* FUFlightFactory_FlightStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUFlightFactory_FlightStats.h; sourceTree = "<group>"; };
-		038F08DD1E4AAAA60027BE91 /* FUFlightFactory_FlyteComm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUFlightFactory_FlyteComm.h; sourceTree = "<group>"; };
-		038F08DE1E4AAAA60027BE91 /* FUFlightFactoryInternalProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FUFlightFactoryInternalProtocol-Protocol.h"; sourceTree = "<group>"; };
-		038F08DF1E4AAAA60027BE91 /* FUFlightFactoryPrivateProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FUFlightFactoryPrivateProtocol-Protocol.h"; sourceTree = "<group>"; };
-		038F08E01E4AAAA60027BE91 /* FUFlightFactoryProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FUFlightFactoryProtocol-Protocol.h"; sourceTree = "<group>"; };
-		038F08E11E4AAAA60027BE91 /* FUFlightInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUFlightInfoView.h; sourceTree = "<group>"; };
-		038F08E21E4AAAA60027BE91 /* FUFlightInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUFlightInfoViewController.h; sourceTree = "<group>"; };
-		038F08E31E4AAAA60027BE91 /* FUFlightInfoViewProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FUFlightInfoViewProtocol-Protocol.h"; sourceTree = "<group>"; };
-		038F08E41E4AAAA60027BE91 /* FUFlightLeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUFlightLeg.h; sourceTree = "<group>"; };
-		038F08E51E4AAAA60027BE91 /* FUFlightLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUFlightLocation.h; sourceTree = "<group>"; };
-		038F08E61E4AAAA60027BE91 /* FUFlightPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUFlightPageController.h; sourceTree = "<group>"; };
-		038F08E71E4AAAA60027BE91 /* FUFlightStateMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUFlightStateMonitor.h; sourceTree = "<group>"; };
-		038F08E81E4AAAA60027BE91 /* FUFlightStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUFlightStep.h; sourceTree = "<group>"; };
-		038F08E91E4AAAA60027BE91 /* FUFLightTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUFLightTrack.h; sourceTree = "<group>"; };
-		038F08EA1E4AAAA60027BE91 /* FUFlightUpdateInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUFlightUpdateInformation.h; sourceTree = "<group>"; };
-		038F08EB1E4AAAA60027BE91 /* FUFlightUpdateTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUFlightUpdateTicket.h; sourceTree = "<group>"; };
-		038F08EC1E4AAAA60027BE91 /* FUFlightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUFlightView.h; sourceTree = "<group>"; };
-		038F08ED1E4AAAA60027BE91 /* FUFlightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUFlightViewController.h; sourceTree = "<group>"; };
-		038F08EE1E4AAAA60027BE91 /* FUFlightViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FUFlightViewDelegate-Protocol.h"; sourceTree = "<group>"; };
-		038F08EF1E4AAAA60027BE91 /* FULabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FULabel.h; sourceTree = "<group>"; };
-		038F08F01E4AAAA60027BE91 /* FULoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FULoadingView.h; sourceTree = "<group>"; };
-		038F08F11E4AAAA60027BE91 /* FUPlaneTrackerAnnotationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUPlaneTrackerAnnotationLayer.h; sourceTree = "<group>"; };
-		038F08F21E4AAAA60027BE91 /* FUPlaneTrackerAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUPlaneTrackerAnnotationView.h; sourceTree = "<group>"; };
-		038F08F31E4AAAA60027BE91 /* FUStepTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUStepTime.h; sourceTree = "<group>"; };
-		038F08F41E4AAAA60027BE91 /* FUUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUUtils.h; sourceTree = "<group>"; };
-		038F08F51E4AAAA60027BE91 /* MKAnnotation-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotation-Protocol.h"; sourceTree = "<group>"; };
-		038F08F61E4AAAA60027BE91 /* MKMapViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapViewDelegate-Protocol.h"; sourceTree = "<group>"; };
-		038F08F71E4AAAA60027BE91 /* NSAttributedString-FUUppercase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString-FUUppercase.h"; sourceTree = "<group>"; };
-		038F08F81E4AAAA60027BE91 /* NSCoding-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoding-Protocol.h"; sourceTree = "<group>"; };
-		038F08F91E4AAAA60027BE91 /* NSCopying-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCopying-Protocol.h"; sourceTree = "<group>"; };
-		038F08FA1E4AAAA60027BE91 /* NSImage-Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage-Utilities.h"; sourceTree = "<group>"; };
-		038F08FB1E4AAAA60027BE91 /* NSObject-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-Protocol.h"; sourceTree = "<group>"; };
-		038F08FC1E4AAAA60027BE91 /* NSPageControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPageControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
-		038F08FD1E4AAAA60027BE91 /* NSSecureCoding-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSecureCoding-Protocol.h"; sourceTree = "<group>"; };
-		038F08FE1E4AAAA60027BE91 /* NSString-FUFlightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-FUFlightViewController.h"; sourceTree = "<group>"; };
-		038F08FF1E4AAAA60027BE91 /* NSString-FUUppercase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-FUUppercase.h"; sourceTree = "<group>"; };
 		038F09011E4AAAAE0027BE91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = TodayFlights/Base.lproj/MainMenu.xib; sourceTree = SOURCE_ROOT; };
 		038F09061E4AAABD0027BE91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TodayFlights/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		038F09081E4AAAD60027BE91 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TodayFlights/Info.plist; sourceTree = SOURCE_ROOT; };
@@ -256,49 +214,7 @@
 		038F08D41E4AAAA60027BE91 /* FlightUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				038F08D51E4AAAA60027BE91 /* CDStructures.h */,
-				038F08D61E4AAAA60027BE91 /* FUAirline.h */,
-				038F08D71E4AAAA60027BE91 /* FUAirport.h */,
-				038F08D81E4AAAA60027BE91 /* FUErrorView.h */,
-				038F08D91E4AAAA60027BE91 /* FUFlight.h */,
-				038F08DA1E4AAAA60027BE91 /* FUFlightCodeShare.h */,
-				038F08DB1E4AAAA60027BE91 /* FUFlightFactory.h */,
-				038F08DC1E4AAAA60027BE91 /* FUFlightFactory_FlightStats.h */,
-				038F08DD1E4AAAA60027BE91 /* FUFlightFactory_FlyteComm.h */,
-				038F08DE1E4AAAA60027BE91 /* FUFlightFactoryInternalProtocol-Protocol.h */,
-				038F08DF1E4AAAA60027BE91 /* FUFlightFactoryPrivateProtocol-Protocol.h */,
-				038F08E01E4AAAA60027BE91 /* FUFlightFactoryProtocol-Protocol.h */,
-				038F08E11E4AAAA60027BE91 /* FUFlightInfoView.h */,
-				038F08E21E4AAAA60027BE91 /* FUFlightInfoViewController.h */,
-				038F08E31E4AAAA60027BE91 /* FUFlightInfoViewProtocol-Protocol.h */,
-				038F08E41E4AAAA60027BE91 /* FUFlightLeg.h */,
-				038F08E51E4AAAA60027BE91 /* FUFlightLocation.h */,
-				038F08E61E4AAAA60027BE91 /* FUFlightPageController.h */,
-				038F08E71E4AAAA60027BE91 /* FUFlightStateMonitor.h */,
-				038F08E81E4AAAA60027BE91 /* FUFlightStep.h */,
-				038F08E91E4AAAA60027BE91 /* FUFLightTrack.h */,
-				038F08EA1E4AAAA60027BE91 /* FUFlightUpdateInformation.h */,
-				038F08EB1E4AAAA60027BE91 /* FUFlightUpdateTicket.h */,
-				038F08EC1E4AAAA60027BE91 /* FUFlightView.h */,
-				038F08ED1E4AAAA60027BE91 /* FUFlightViewController.h */,
-				038F08EE1E4AAAA60027BE91 /* FUFlightViewDelegate-Protocol.h */,
-				038F08EF1E4AAAA60027BE91 /* FULabel.h */,
-				038F08F01E4AAAA60027BE91 /* FULoadingView.h */,
-				038F08F11E4AAAA60027BE91 /* FUPlaneTrackerAnnotationLayer.h */,
-				038F08F21E4AAAA60027BE91 /* FUPlaneTrackerAnnotationView.h */,
-				038F08F31E4AAAA60027BE91 /* FUStepTime.h */,
-				038F08F41E4AAAA60027BE91 /* FUUtils.h */,
-				038F08F51E4AAAA60027BE91 /* MKAnnotation-Protocol.h */,
-				038F08F61E4AAAA60027BE91 /* MKMapViewDelegate-Protocol.h */,
-				038F08F71E4AAAA60027BE91 /* NSAttributedString-FUUppercase.h */,
-				038F08F81E4AAAA60027BE91 /* NSCoding-Protocol.h */,
-				038F08F91E4AAAA60027BE91 /* NSCopying-Protocol.h */,
-				038F08FA1E4AAAA60027BE91 /* NSImage-Utilities.h */,
-				038F08FB1E4AAAA60027BE91 /* NSObject-Protocol.h */,
-				038F08FC1E4AAAA60027BE91 /* NSPageControllerDelegate-Protocol.h */,
-				038F08FD1E4AAAA60027BE91 /* NSSecureCoding-Protocol.h */,
-				038F08FE1E4AAAA60027BE91 /* NSString-FUFlightViewController.h */,
-				038F08FF1E4AAAA60027BE91 /* NSString-FUUppercase.h */,
+				0388D6A124ED53AF007BA51E /* FUFlightViewController.h */,
 			);
 			path = FlightUtilities;
 			sourceTree = "<group>";
