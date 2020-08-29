@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		034A7A921E4D31F700619BFF /* UserDefaults+AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A7A911E4D31F700619BFF /* UserDefaults+AppGroup.swift */; };
 		034A7A941E4D33DE00619BFF /* AddFlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A7A931E4D33DE00619BFF /* AddFlightViewController.swift */; };
-		0351E12824F9FCC800E9976F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0351E12624F9FCC800E9976F /* InfoPlist.strings */; };
 		0351E13224F9FCF800E9976F /* FirstRunViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0351E12B24F9FCF800E9976F /* FirstRunViewController.xib */; };
 		0351E13324F9FCF800E9976F /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0351E12D24F9FCF800E9976F /* TodayViewController.m */; };
 		0351E13424F9FCF800E9976F /* FirstRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0351E12E24F9FCF800E9976F /* FirstRunViewController.m */; };
 		0351E13524F9FCF800E9976F /* EditFlightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0351E12F24F9FCF800E9976F /* EditFlightViewController.xib */; };
 		0351E13624F9FCF800E9976F /* EditFlightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0351E13024F9FCF800E9976F /* EditFlightViewController.m */; };
 		0351E14024F9FF2900E9976F /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0351E13E24F9FF2900E9976F /* TodayViewController.xib */; };
+		0351E15724FA08B100E9976F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0351E15524FA08B100E9976F /* InfoPlist.strings */; };
 		03781E211DF987B200EF1ABF /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03781E201DF987B200EF1ABF /* AppKit.framework */; };
 		03781E231DF987B600EF1ABF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03781E221DF987B600EF1ABF /* Cocoa.framework */; };
 		037BFBD71E4D68150022A75B /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037BFBD61E4D68150022A75B /* Sparkle.framework */; };
@@ -78,7 +78,6 @@
 /* Begin PBXFileReference section */
 		034A7A911E4D31F700619BFF /* UserDefaults+AppGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UserDefaults+AppGroup.swift"; path = "TodayFlights/UserDefaults+AppGroup.swift"; sourceTree = SOURCE_ROOT; };
 		034A7A931E4D33DE00619BFF /* AddFlightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddFlightViewController.swift; path = TodayFlights/AddFlightViewController.swift; sourceTree = SOURCE_ROOT; };
-		0351E12724F9FCC800E9976F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		0351E12924F9FCCF00E9976F /* TodayFlightsWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = TodayFlightsWidget.entitlements; path = TodayFlightsWidget/TodayFlightsWidget.entitlements; sourceTree = SOURCE_ROOT; };
 		0351E12A24F9FCF800E9976F /* FirstRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstRunViewController.h; path = TodayFlightsWidget/FirstRunViewController.h; sourceTree = SOURCE_ROOT; };
 		0351E12B24F9FCF800E9976F /* FirstRunViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FirstRunViewController.xib; path = TodayFlightsWidget/FirstRunViewController.xib; sourceTree = SOURCE_ROOT; };
@@ -88,8 +87,9 @@
 		0351E12F24F9FCF800E9976F /* EditFlightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditFlightViewController.xib; path = TodayFlightsWidget/EditFlightViewController.xib; sourceTree = SOURCE_ROOT; };
 		0351E13024F9FCF800E9976F /* EditFlightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditFlightViewController.m; path = TodayFlightsWidget/EditFlightViewController.m; sourceTree = SOURCE_ROOT; };
 		0351E13124F9FCF800E9976F /* EditFlightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditFlightViewController.h; path = TodayFlightsWidget/EditFlightViewController.h; sourceTree = SOURCE_ROOT; };
-		0351E13724F9FD7900E9976F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = TodayFlightsWidget/Info.plist; sourceTree = SOURCE_ROOT; };
 		0351E13F24F9FF2900E9976F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = TodayViewController.xib; sourceTree = "<group>"; };
+		0351E14924FA081000E9976F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = TodayFlightsWidget/Info.plist; sourceTree = SOURCE_ROOT; };
+		0351E15624FA08B100E9976F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		036D7BF91DFAB0ED00B28048 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		03781DDF1DF9825800EF1ABF /* TodayFlights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayFlights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03781E201DF987B200EF1ABF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -134,15 +134,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0351E12524F9FCC800E9976F /* en.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				0351E12624F9FCC800E9976F /* InfoPlist.strings */,
-			);
-			name = en.lproj;
-			path = TodayFlightsWidget/en.lproj;
-			sourceTree = SOURCE_ROOT;
-		};
 		0351E13D24F9FF2900E9976F /* Base.lproj */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +141,15 @@
 			);
 			name = Base.lproj;
 			path = TodayFlightsWidget/Base.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		0351E15424FA08B100E9976F /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				0351E15524FA08B100E9976F /* InfoPlist.strings */,
+			);
+			name = en.lproj;
+			path = TodayFlightsWidget/en.lproj;
 			sourceTree = SOURCE_ROOT;
 		};
 		03781DD61DF9825800EF1ABF = {
@@ -237,9 +237,9 @@
 		0388D75C24F9EFBD007BA51E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0351E13724F9FD7900E9976F /* Info.plist */,
+				0351E15424FA08B100E9976F /* en.lproj */,
+				0351E14924FA081000E9976F /* Info.plist */,
 				0351E12924F9FCCF00E9976F /* TodayFlightsWidget.entitlements */,
-				0351E12524F9FCC800E9976F /* en.lproj */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -382,7 +382,7 @@
 				0351E14024F9FF2900E9976F /* TodayViewController.xib in Resources */,
 				0351E13524F9FCF800E9976F /* EditFlightViewController.xib in Resources */,
 				0351E13224F9FCF800E9976F /* FirstRunViewController.xib in Resources */,
-				0351E12824F9FCC800E9976F /* InfoPlist.strings in Resources */,
+				0351E15724FA08B100E9976F /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,20 +420,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0351E12624F9FCC800E9976F /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0351E12724F9FCC800E9976F /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		0351E13E24F9FF2900E9976F /* TodayViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0351E13F24F9FF2900E9976F /* Base */,
 			);
 			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		0351E15524FA08B100E9976F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0351E15624FA08B100E9976F /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		038F09001E4AAAAE0027BE91 /* MainMenu.xib */ = {
