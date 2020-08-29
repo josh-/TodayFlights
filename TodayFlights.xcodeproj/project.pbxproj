@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		034A7A921E4D31F700619BFF /* UserDefaults+AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A7A911E4D31F700619BFF /* UserDefaults+AppGroup.swift */; };
 		034A7A941E4D33DE00619BFF /* AddFlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A7A931E4D33DE00619BFF /* AddFlightViewController.swift */; };
+		0350634F24FA32DC00E71269 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0350634D24FA32DB00E71269 /* Info.plist */; };
+		0350635024FA32F000E71269 /* TodayFlightsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0350634C24FA32DB00E71269 /* TodayFlightsTests.m */; };
+		0350635124FA343400E71269 /* FlightUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0388D66D24ED4A90007BA51E /* FlightUtilities.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		0351E13224F9FCF800E9976F /* FirstRunViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0351E12B24F9FCF800E9976F /* FirstRunViewController.xib */; };
 		0351E13324F9FCF800E9976F /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0351E12D24F9FCF800E9976F /* TodayViewController.m */; };
 		0351E13424F9FCF800E9976F /* FirstRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0351E12E24F9FCF800E9976F /* FirstRunViewController.m */; };
@@ -33,6 +36,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0350634624FA32B900E71269 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03781DD71DF9825800EF1ABF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03781DDE1DF9825800EF1ABF;
+			remoteInfo = TodayFlights;
+		};
 		0388D72C24F74A21007BA51E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 03781DD71DF9825800EF1ABF /* Project object */;
@@ -79,6 +89,9 @@
 /* Begin PBXFileReference section */
 		034A7A911E4D31F700619BFF /* UserDefaults+AppGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UserDefaults+AppGroup.swift"; path = "TodayFlights/UserDefaults+AppGroup.swift"; sourceTree = SOURCE_ROOT; };
 		034A7A931E4D33DE00619BFF /* AddFlightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddFlightViewController.swift; path = TodayFlights/AddFlightViewController.swift; sourceTree = SOURCE_ROOT; };
+		0350634124FA32B900E71269 /* TodayFlightsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayFlightsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0350634C24FA32DB00E71269 /* TodayFlightsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayFlightsTests.m; sourceTree = "<group>"; };
+		0350634D24FA32DB00E71269 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0351E12924F9FCCF00E9976F /* TodayFlightsWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = TodayFlightsWidget.entitlements; path = TodayFlightsWidget/TodayFlightsWidget.entitlements; sourceTree = SOURCE_ROOT; };
 		0351E12A24F9FCF800E9976F /* FirstRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstRunViewController.h; path = TodayFlightsWidget/FirstRunViewController.h; sourceTree = SOURCE_ROOT; };
 		0351E12B24F9FCF800E9976F /* FirstRunViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FirstRunViewController.xib; path = TodayFlightsWidget/FirstRunViewController.xib; sourceTree = SOURCE_ROOT; };
@@ -100,8 +113,6 @@
 		037BFBDB1E4D776D0022A75B /* dsa_pub.pem */ = {isa = PBXFileReference; lastKnownFileType = text; name = dsa_pub.pem; path = ../TodayFlights/dsa_pub.pem; sourceTree = "<group>"; };
 		0388D66D24ED4A90007BA51E /* FlightUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FlightUtilities.framework; path = /System/Library/PrivateFrameworks/FlightUtilities.framework; sourceTree = "<group>"; };
 		0388D6A124ED53AF007BA51E /* FUFlightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUFlightViewController.h; sourceTree = "<group>"; };
-		0388D6F624F73B5D007BA51E /* TodayFlightsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayFlightsTests.m; sourceTree = "<group>"; };
-		0388D6F824F73B5D007BA51E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0388D71E24F74A21007BA51E /* TodayFlightsWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayFlightsWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		038F08CF1E4AAA8E0027BE91 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TodayFlights/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		038F09011E4AAAAE0027BE91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = TodayFlights/Base.lproj/MainMenu.xib; sourceTree = SOURCE_ROOT; };
@@ -112,6 +123,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0350633E24FA32B900E71269 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0350635124FA343400E71269 /* FlightUtilities.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03781DDC1DF9825800EF1ABF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,6 +155,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0350634B24FA32DB00E71269 /* TodayFlightsTests */ = {
+			isa = PBXGroup;
+			children = (
+				0350634C24FA32DB00E71269 /* TodayFlightsTests.m */,
+				0350634D24FA32DB00E71269 /* Info.plist */,
+			);
+			path = TodayFlightsTests;
+			sourceTree = "<group>";
+		};
 		0351E13D24F9FF2900E9976F /* Base.lproj */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,8 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				03781DE11DF9825800EF1ABF /* App */,
-				0388D6F524F73B5D007BA51E /* TodayFlightsTests */,
 				0388D72024F74A21007BA51E /* TodayFlightsWidget */,
+				0350634B24FA32DB00E71269 /* TodayFlightsTests */,
 				03781DE01DF9825800EF1ABF /* Products */,
 				03781E1F1DF987B200EF1ABF /* Frameworks */,
 			);
@@ -170,6 +198,7 @@
 			children = (
 				03781DDF1DF9825800EF1ABF /* TodayFlights.app */,
 				0388D71E24F74A21007BA51E /* TodayFlightsWidget.appex */,
+				0350634124FA32B900E71269 /* TodayFlightsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,15 +230,6 @@
 				03781E201DF987B200EF1ABF /* AppKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		0388D6F524F73B5D007BA51E /* TodayFlightsTests */ = {
-			isa = PBXGroup;
-			children = (
-				0388D6F624F73B5D007BA51E /* TodayFlightsTests.m */,
-				0388D6F824F73B5D007BA51E /* Info.plist */,
-			);
-			path = TodayFlightsTests;
 			sourceTree = "<group>";
 		};
 		0388D72024F74A21007BA51E /* TodayFlightsWidget */ = {
@@ -277,6 +297,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0350634024FA32B900E71269 /* TodayFlightsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0350634824FA32B900E71269 /* Build configuration list for PBXNativeTarget "TodayFlightsTests" */;
+			buildPhases = (
+				0350633D24FA32B900E71269 /* Sources */,
+				0350633E24FA32B900E71269 /* Frameworks */,
+				0350633F24FA32B900E71269 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0350634724FA32B900E71269 /* PBXTargetDependency */,
+			);
+			name = TodayFlightsTests;
+			productName = TodayFlightsTests;
+			productReference = 0350634124FA32B900E71269 /* TodayFlightsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		03781DDE1DF9825800EF1ABF /* TodayFlights */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03781DEC1DF9825800EF1ABF /* Build configuration list for PBXNativeTarget "TodayFlights" */;
@@ -325,6 +363,12 @@
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Josh Parnham";
 				TargetAttributes = {
+					0350634024FA32B900E71269 = {
+						CreatedOnToolsVersion = 11.6;
+						DevelopmentTeam = 3C7269R37R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 03781DDE1DF9825800EF1ABF;
+					};
 					03781DDE1DF9825800EF1ABF = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 3C7269R37R;
@@ -365,17 +409,26 @@
 			targets = (
 				03781DDE1DF9825800EF1ABF /* TodayFlights */,
 				0388D71D24F74A21007BA51E /* TodayFlightsWidget */,
+				0350634024FA32B900E71269 /* TodayFlightsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0350633F24FA32B900E71269 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03781DDD1DF9825800EF1ABF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				038F090D1E4AAF000027BE91 /* Assets.xcassets in Resources */,
 				038F09021E4AAAAE0027BE91 /* MainMenu.xib in Resources */,
+				0350634F24FA32DC00E71269 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +446,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0350633D24FA32B900E71269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0350635024FA32F000E71269 /* TodayFlightsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03781DDB1DF9825800EF1ABF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -417,6 +478,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0350634724FA32B900E71269 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03781DDE1DF9825800EF1ABF /* TodayFlights */;
+			targetProxy = 0350634624FA32B900E71269 /* PBXContainerItemProxy */;
+		};
 		0388D72D24F74A21007BA51E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0388D71D24F74A21007BA51E /* TodayFlightsWidget */;
@@ -452,6 +518,55 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0350634924FA32B900E71269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3C7269R37R;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TodayFlightsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshparnham.TodayFlightsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited) $(SYSTEM_LIBRARY_DIR)/PrivateFrameworks";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodayFlights.app/Contents/MacOS/TodayFlights";
+			};
+			name = Debug;
+		};
+		0350634A24FA32B900E71269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3C7269R37R;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TodayFlightsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshparnham.TodayFlightsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited) $(SYSTEM_LIBRARY_DIR)/PrivateFrameworks";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodayFlights.app/Contents/MacOS/TodayFlights";
+			};
+			name = Release;
+		};
 		03781DEA1DF9825800EF1ABF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -680,6 +795,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0350634824FA32B900E71269 /* Build configuration list for PBXNativeTarget "TodayFlightsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0350634924FA32B900E71269 /* Debug */,
+				0350634A24FA32B900E71269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		03781DDA1DF9825800EF1ABF /* Build configuration list for PBXProject "TodayFlights" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
