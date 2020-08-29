@@ -16,6 +16,7 @@
 		0351E13624F9FCF800E9976F /* EditFlightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0351E13024F9FCF800E9976F /* EditFlightViewController.m */; };
 		0351E14024F9FF2900E9976F /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0351E13E24F9FF2900E9976F /* TodayViewController.xib */; };
 		0351E15724FA08B100E9976F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0351E15524FA08B100E9976F /* InfoPlist.strings */; };
+		0351E15E24FA275700E9976F /* DemoWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0351E15C24FA270B00E9976F /* DemoWindowController.swift */; };
 		03781E211DF987B200EF1ABF /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03781E201DF987B200EF1ABF /* AppKit.framework */; };
 		03781E231DF987B600EF1ABF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03781E221DF987B600EF1ABF /* Cocoa.framework */; };
 		037BFBD71E4D68150022A75B /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037BFBD61E4D68150022A75B /* Sparkle.framework */; };
@@ -90,6 +91,7 @@
 		0351E13F24F9FF2900E9976F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = TodayViewController.xib; sourceTree = "<group>"; };
 		0351E14924FA081000E9976F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = TodayFlightsWidget/Info.plist; sourceTree = SOURCE_ROOT; };
 		0351E15624FA08B100E9976F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		0351E15C24FA270B00E9976F /* DemoWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoWindowController.swift; path = TodayFlights/DemoWindowController.swift; sourceTree = SOURCE_ROOT; };
 		036D7BF91DFAB0ED00B28048 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		03781DDF1DF9825800EF1ABF /* TodayFlights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayFlights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03781E201DF987B200EF1ABF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -179,6 +181,7 @@
 				038F08CF1E4AAA8E0027BE91 /* AppDelegate.swift */,
 				038F09001E4AAAAE0027BE91 /* MainMenu.xib */,
 				034A7A931E4D33DE00619BFF /* AddFlightViewController.swift */,
+				0351E15C24FA270B00E9976F /* DemoWindowController.swift */,
 				034A7A911E4D31F700619BFF /* UserDefaults+AppGroup.swift */,
 				038F09061E4AAABD0027BE91 /* Assets.xcassets */,
 				03AD70F01E1AF3BA00874F53 /* Supporting Files */,
@@ -342,6 +345,7 @@
 					0388D71D24F74A21007BA51E = {
 						CreatedOnToolsVersion = 11.6;
 						DevelopmentTeam = 3C7269R37R;
+						LastSwiftMigration = 1160;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -395,6 +399,7 @@
 			files = (
 				038F08D01E4AAA8E0027BE91 /* AppDelegate.swift in Sources */,
 				034A7A941E4D33DE00619BFF /* AddFlightViewController.swift in Sources */,
+				0351E15E24FA275700E9976F /* DemoWindowController.swift in Sources */,
 				034A7A921E4D31F700619BFF /* UserDefaults+AppGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,6 +624,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = TodayFlightsWidget/TodayFlightsWidget.entitlements;
@@ -637,6 +643,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshparnham.TodayFlights.Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited) $(SYSTEM_LIBRARY_DIR)/PrivateFrameworks";
 			};
 			name = Debug;
@@ -646,6 +654,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = TodayFlightsWidget/TodayFlightsWidget.entitlements;
@@ -663,6 +672,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshparnham.TodayFlights.Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited) $(SYSTEM_LIBRARY_DIR)/PrivateFrameworks";
 			};
 			name = Release;

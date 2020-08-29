@@ -34,4 +34,12 @@ class AddFlightViewController: NSViewController, NSTextFieldDelegate {
             defaults.setValue(routeNumberTextField.stringValue, forKey: "routeNumber")
         }
     }
+    
+    @IBAction func save(_ sender: NSButton) {
+        guard let defaults = TodayFlightsUserDefaults.sharedInstance else { return }
+        
+        defaults.setValue(airlineCodeTextField.stringValue, forKey: "airlineCode")
+        defaults.setValue(routeNumberTextField.stringValue, forKey: "routeNumber")
+    }
+    
 }

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.2"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,7 +15,6 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TodayFlights" customModuleProvider="target">
             <connections>
                 <outlet property="addFlightWindow" destination="lUf-oa-Rye" id="tJF-vO-bht"/>
-                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -94,6 +92,13 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="eu3-7i-yIM"/>
+                            <menuItem title="Demo" id="RRL-rL-Bu2">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showDemoWindow:" target="Voe-Tx-rLC" id="aec-Os-wGK"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="VdT-j4-vfG"/>
                             <menuItem title="Bring All to Front" id="LE2-aR-0XJ">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
@@ -116,72 +121,97 @@
                     </menu>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="139" y="154"/>
         </menu>
-        <window title="TodayFlights" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="Add Flight" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="" animationBehavior="default" id="lUf-oa-Rye" userLabel="AddFlight">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="300" height="385"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
-            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="300" height="385"/>
-                <autoresizingMask key="autoresizingMask"/>
-            </view>
-            <point key="canvasLocation" x="-239" y="-246.5"/>
-        </window>
-        <window title="Add Flight" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" frameAutosaveName="" animationBehavior="default" id="lUf-oa-Rye" userLabel="AddFlight">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="163" y="199" width="221" height="177"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <rect key="contentRect" x="163" y="199" width="221" height="201"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
             <view key="contentView" id="Vs4-ty-8WT">
-                <rect key="frame" x="0.0" y="0.0" width="221" height="177"/>
+                <rect key="frame" x="0.0" y="0.0" width="221" height="201"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W3d-ai-7zY">
-                        <rect key="frame" x="18" y="117" width="185" height="51"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W3d-ai-7zY">
+                        <rect key="frame" x="18" y="141" width="185" height="51"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="51" id="PKT-Gs-Xp2"/>
+                        </constraints>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="The TodayFlights Widget is now available to be added in Notification Center." id="ozQ-ud-arb">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsW-rf-1Qa">
-                        <rect key="frame" x="20" y="52" width="181" height="22"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textField verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsW-rf-1Qa">
+                        <rect key="frame" x="20" y="76" width="181" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="fgX-f9-MU3"/>
+                        </constraints>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Airline Code" drawsBackground="YES" usesSingleLineMode="YES" id="gIz-fG-L70">
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
                             <outlet property="delegate" destination="9du-S6-caC" id="OtY-1D-qbM"/>
                         </connections>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ngM-ZK-hJl">
-                        <rect key="frame" x="18" y="82" width="111" height="17"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ngM-ZK-hJl">
+                        <rect key="frame" x="18" y="106" width="111" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="369-o4-m5Y"/>
+                        </constraints>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Flight Information" id="wKq-Br-hv1">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rL-iM-GbA">
-                        <rect key="frame" x="20" y="20" width="181" height="22"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textField verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rL-iM-GbA">
+                        <rect key="frame" x="20" y="44" width="181" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="fEx-xh-Xhz"/>
+                        </constraints>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Route Number" drawsBackground="YES" usesSingleLineMode="YES" id="g0L-dc-AvS">
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
                             <outlet property="delegate" destination="9du-S6-caC" id="BqZ-M3-rV2"/>
                         </connections>
                     </textField>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="m2c-xQ-cYP">
+                        <rect key="frame" x="14" y="8" width="70" height="32"/>
+                        <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="tcG-PI-Hya">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="save:" target="9du-S6-caC" id="Zoz-8G-iun"/>
+                        </connections>
+                    </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="ngM-ZK-hJl" firstAttribute="leading" secondItem="gsW-rf-1Qa" secondAttribute="leading" id="9Mn-ic-aJc"/>
+                    <constraint firstAttribute="trailing" secondItem="W3d-ai-7zY" secondAttribute="trailing" constant="20" symbolic="YES" id="C6Z-3B-opq"/>
+                    <constraint firstItem="ngM-ZK-hJl" firstAttribute="top" secondItem="W3d-ai-7zY" secondAttribute="bottom" constant="18" id="CTz-U2-gHS"/>
+                    <constraint firstItem="W3d-ai-7zY" firstAttribute="leading" secondItem="ngM-ZK-hJl" secondAttribute="leading" id="DOS-pQ-5o8"/>
+                    <constraint firstItem="W3d-ai-7zY" firstAttribute="trailing" secondItem="gsW-rf-1Qa" secondAttribute="trailing" id="Kko-ea-7FZ"/>
+                    <constraint firstItem="gsW-rf-1Qa" firstAttribute="top" secondItem="ngM-ZK-hJl" secondAttribute="bottom" constant="8" symbolic="YES" id="LOQ-a0-qde"/>
+                    <constraint firstItem="gsW-rf-1Qa" firstAttribute="trailing" secondItem="7rL-iM-GbA" secondAttribute="trailing" id="Snp-eG-l2u"/>
+                    <constraint firstItem="W3d-ai-7zY" firstAttribute="leading" secondItem="Vs4-ty-8WT" secondAttribute="leading" constant="20" symbolic="YES" id="b99-FP-ga1"/>
+                    <constraint firstItem="gsW-rf-1Qa" firstAttribute="leading" secondItem="7rL-iM-GbA" secondAttribute="leading" id="bwj-tO-TNn"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ngM-ZK-hJl" secondAttribute="trailing" constant="20" symbolic="YES" id="eYw-gi-Y2s"/>
+                    <constraint firstItem="7rL-iM-GbA" firstAttribute="leading" secondItem="m2c-xQ-cYP" secondAttribute="leading" id="lw0-fK-Sax"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m2c-xQ-cYP" secondAttribute="trailing" constant="20" symbolic="YES" id="o4m-SA-6e1"/>
+                    <constraint firstItem="W3d-ai-7zY" firstAttribute="top" secondItem="Vs4-ty-8WT" secondAttribute="top" constant="9" id="qis-ST-Ana"/>
+                    <constraint firstItem="7rL-iM-GbA" firstAttribute="top" secondItem="gsW-rf-1Qa" secondAttribute="bottom" constant="10" symbolic="YES" id="r8L-GL-b8P"/>
+                    <constraint firstItem="m2c-xQ-cYP" firstAttribute="top" secondItem="7rL-iM-GbA" secondAttribute="bottom" constant="8" symbolic="YES" id="vVM-9H-lWs"/>
+                </constraints>
             </view>
-            <point key="canvasLocation" x="-120.5" y="-654.5"/>
+            <point key="canvasLocation" x="-120.5" y="-642.5"/>
         </window>
         <viewController id="9du-S6-caC" customClass="AddFlightViewController" customModule="TodayFlights" customModuleProvider="target">
             <connections>
