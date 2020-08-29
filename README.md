@@ -6,7 +6,7 @@ TodayFlights is a Notification Center widget that allows you to monitor flights 
 
 ## Installation
 
-* [Download](https://github.com/josh-/TodayFlights/releases/download/v1.0/TodayFlights.dmg) the latest DMG.
+* [Download](https://github.com/josh-/TodayFlights/releases/latest) the latest DMG.
 
 ## Usage
 
@@ -24,13 +24,13 @@ Customise the flight being tracked by hovering over the widget and clicking the 
 
 ## Requirements
 
-* macOS 10.10 or later
+* macOS 10.15 or later
 
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2017 Josh Parnham
+Copyright (c) 2020 Josh Parnham
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
