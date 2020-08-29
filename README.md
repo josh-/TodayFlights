@@ -14,9 +14,9 @@ TodayFlights is a Notification Center widget that allows you to monitor flights 
 ## Usage
 
 1. Download the DMG file from above and copy the TodayFlights app to the Applications folder
-2. Run the TodayFlights app
-3. Open *Notification Center*, and click "1 new" at the bottom of the panel
-4. Add the TodayFlights widget
+2. Launch the TodayFlights app
+3. Open [Notification Center](https://support.apple.com/HT204079), select "Today" and click "1 new" at the bottom of the panel
+4. Add the TodayFlights widget by clicking on the plus icon (+)
 
 Customise the flight being tracked by hovering over the widget and clicking the info button that appears in the top-right corner.
 
