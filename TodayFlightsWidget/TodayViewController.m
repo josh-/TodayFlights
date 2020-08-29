@@ -147,6 +147,7 @@
         }
         else {
             // Since this method can also be called when the info button is pressed, show the edit controller if it not currently being shown
+            // https://stackoverflow.com/questions/24970533/show-viewcontroller-on-extension-info-button-edit-mode
             int64_t timeDelta = 0.5 * NSEC_PER_SEC;
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, timeDelta), dispatch_get_main_queue(), ^{
                 [self presentViewControllerInWidget:self.editFlightViewController];
