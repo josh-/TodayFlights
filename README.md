@@ -2,7 +2,10 @@
 
 TodayFlights is a Notification Center widget that allows you to monitor flights as they depart, fly and land. It uses the system flight tracking framework included in macOS.
 
-![TodayFlights](http://joshparnham.com/images/TodayFlights/1.jpg)
+<p align="center">
+    <img width="300px" src="http://joshparnham.com/images/TodayFlights-v1.1/1.jpg" />
+    <img width="300px" src="http://joshparnham.com/images/TodayFlights-v1.1/2.jpg" />
+</p>
 
 ## Installation
 
