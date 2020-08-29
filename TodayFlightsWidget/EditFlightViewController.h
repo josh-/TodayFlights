@@ -1,15 +1,14 @@
 //
 //  EditFlightViewController.h
-//  TodayFlights
+//  TodayFlightsWidget
 //
-//  Created by Josh Parnham on 20/12/16.
-//  Copyright © 2016 Josh Parnham. All rights reserved.
+//  Created by Josh Parnham on 29/8/20.
+//  Copyright © 2020 Josh Parnham. All rights reserved.
 //
 
 @import AppKit;
-@import NotificationCenter;
 
-@interface EditFlightViewController : NCWidgetListViewController <NSTextFieldDelegate>
+@interface EditFlightViewController : NSViewController
 
 @property (strong, nonatomic) IBOutlet NSTextField *airlineCodeTextField;
 @property (strong, nonatomic) IBOutlet NSTextField *routeNumberTextField;

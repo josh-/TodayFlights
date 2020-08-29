@@ -1,9 +1,9 @@
 //
 //  TodayViewController.h
-//  TodayFlights
+//  TodayFlightsWidget
 //
-//  Created by Josh Parnham on 9/12/16.
-//  Copyright © 2016 Josh Parnham. All rights reserved.
+//  Created by Josh Parnham on 27/8/20.
+//  Copyright © 2020 Josh Parnham. All rights reserved.
 //
 
 @import AppKit;
