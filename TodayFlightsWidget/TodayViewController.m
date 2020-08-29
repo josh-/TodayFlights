@@ -108,12 +108,19 @@
 }
 
 - (void)endWidgetEditingMode {
-    SEL sel = NSSelectorFromString(@"setWidgetMode:");
-    id extensionContextDelegate = [self.extensionContext performSelector:@selector(delegate)];
-    NSMethodSignature *signature = [[extensionContextDelegate class] instanceMethodSignatureForSelector:sel];
-    NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
-    invocation.selector = sel;
-    [invocation performSelector:@selector(invokeWithTarget:) withObject:extensionContextDelegate afterDelay:0.1]; // Needs to be performed after delay to prevent crash
+    id extensionContextDelegate;
+    if ([self.extensionContext respondsToSelector:@selector(delegate)]) {
+        extensionContextDelegate = [self.extensionContext performSelector:@selector(delegate)];
+    }
+    
+    SEL setWidgetModeSelector = NSSelectorFromString(@"setWidgetMode:");
+    if ([self.extensionContext respondsToSelector:setWidgetModeSelector]) {
+        NSMethodSignature *signature = [[extensionContextDelegate class] instanceMethodSignatureForSelector:setWidgetModeSelector];
+        
+        NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
+        invocation.selector = setWidgetModeSelector;
+        [invocation performSelector:@selector(invokeWithTarget:) withObject:extensionContextDelegate afterDelay:0.1]; // Needs to be performed after delay to prevent crash
+    }
 }
 
 - (BOOL)shouldDisplayFirstRunInformation {
