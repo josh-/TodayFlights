@@ -126,28 +126,14 @@
         <window title="Add Flight" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="" animationBehavior="default" id="lUf-oa-Rye" userLabel="AddFlight">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="163" y="199" width="221" height="201"/>
+            <rect key="contentRect" x="163" y="199" width="326" height="280"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
             <view key="contentView" id="Vs4-ty-8WT">
-                <rect key="frame" x="0.0" y="0.0" width="221" height="201"/>
+                <rect key="frame" x="0.0" y="0.0" width="326" height="280"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W3d-ai-7zY">
-                        <rect key="frame" x="18" y="141" width="185" height="51"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="51" id="PKT-Gs-Xp2"/>
-                        </constraints>
-                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="The TodayFlights Widget is now available to be added in Notification Center." id="ozQ-ud-arb">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                     <textField verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsW-rf-1Qa">
-                        <rect key="frame" x="20" y="76" width="181" height="22"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="22" id="fgX-f9-MU3"/>
-                        </constraints>
+                        <rect key="frame" x="135" y="84" width="152" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Airline Code" drawsBackground="YES" usesSingleLineMode="YES" id="gIz-fG-L70">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -158,9 +144,9 @@
                         </connections>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ngM-ZK-hJl">
-                        <rect key="frame" x="18" y="106" width="111" height="17"/>
+                        <rect key="frame" x="18" y="176" width="111" height="17"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="17" id="369-o4-m5Y"/>
+                            <constraint firstAttribute="height" constant="17" id="kXX-OE-FtT"/>
                         </constraints>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Flight Information" id="wKq-Br-hv1">
                             <font key="font" metaFont="system"/>
@@ -169,10 +155,7 @@
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rL-iM-GbA">
-                        <rect key="frame" x="20" y="44" width="181" height="22"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="22" id="fEx-xh-Xhz"/>
-                        </constraints>
+                        <rect key="frame" x="135" y="52" width="152" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Route Number" drawsBackground="YES" usesSingleLineMode="YES" id="g0L-dc-AvS">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -183,7 +166,7 @@
                         </connections>
                     </textField>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="m2c-xQ-cYP">
-                        <rect key="frame" x="14" y="8" width="70" height="32"/>
+                        <rect key="frame" x="223" y="13" width="70" height="32"/>
                         <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="tcG-PI-Hya">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -192,26 +175,99 @@
                             <action selector="save:" target="9du-S6-caC" id="Zoz-8G-iun"/>
                         </connections>
                     </button>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="RiE-Ya-crf">
+                        <rect key="frame" x="18" y="118" width="290" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="4ur-Kg-1NQ"/>
+                        </constraints>
+                        <textFieldCell key="cell" selectable="YES" id="4Fn-PI-ceD">
+                            <font key="font" metaFont="message" size="11"/>
+                            <string key="title">Enter a flight number – composed of the two character Airline Code and one to four digit
+Route Number.</string>
+                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="PWk-j0-qzB">
+                        <rect key="frame" x="20" y="205" width="286" height="5"/>
+                    </box>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W3d-ai-7zY">
+                        <rect key="frame" x="18" y="228" width="255" height="32"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="The TodayFlights Widget is now available to be added in Notification Center." id="ozQ-ud-arb">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hnv-ij-mLE">
+                        <rect key="frame" x="283" y="229" width="25" height="26"/>
+                        <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ALs-y5-1X1">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="helpButtonClicked:" target="9du-S6-caC" id="yf0-UZ-YVv"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5z8-e2-yv6">
+                        <rect key="frame" x="51" y="87" width="78" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="8U3-cK-YuT"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Airline Code" id="edc-By-RxZ">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TZT-bi-Ojy">
+                        <rect key="frame" x="37" y="55" width="92" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="OZc-M0-CPj"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Route Number" id="tE5-89-nop">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ngM-ZK-hJl" firstAttribute="leading" secondItem="gsW-rf-1Qa" secondAttribute="leading" id="9Mn-ic-aJc"/>
-                    <constraint firstAttribute="trailing" secondItem="W3d-ai-7zY" secondAttribute="trailing" constant="20" symbolic="YES" id="C6Z-3B-opq"/>
-                    <constraint firstItem="ngM-ZK-hJl" firstAttribute="top" secondItem="W3d-ai-7zY" secondAttribute="bottom" constant="18" id="CTz-U2-gHS"/>
-                    <constraint firstItem="W3d-ai-7zY" firstAttribute="leading" secondItem="ngM-ZK-hJl" secondAttribute="leading" id="DOS-pQ-5o8"/>
-                    <constraint firstItem="W3d-ai-7zY" firstAttribute="trailing" secondItem="gsW-rf-1Qa" secondAttribute="trailing" id="Kko-ea-7FZ"/>
-                    <constraint firstItem="gsW-rf-1Qa" firstAttribute="top" secondItem="ngM-ZK-hJl" secondAttribute="bottom" constant="8" symbolic="YES" id="LOQ-a0-qde"/>
-                    <constraint firstItem="gsW-rf-1Qa" firstAttribute="trailing" secondItem="7rL-iM-GbA" secondAttribute="trailing" id="Snp-eG-l2u"/>
-                    <constraint firstItem="W3d-ai-7zY" firstAttribute="leading" secondItem="Vs4-ty-8WT" secondAttribute="leading" constant="20" symbolic="YES" id="b99-FP-ga1"/>
-                    <constraint firstItem="gsW-rf-1Qa" firstAttribute="leading" secondItem="7rL-iM-GbA" secondAttribute="leading" id="bwj-tO-TNn"/>
-                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ngM-ZK-hJl" secondAttribute="trailing" constant="20" symbolic="YES" id="eYw-gi-Y2s"/>
-                    <constraint firstItem="7rL-iM-GbA" firstAttribute="leading" secondItem="m2c-xQ-cYP" secondAttribute="leading" id="lw0-fK-Sax"/>
-                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m2c-xQ-cYP" secondAttribute="trailing" constant="20" symbolic="YES" id="o4m-SA-6e1"/>
-                    <constraint firstItem="W3d-ai-7zY" firstAttribute="top" secondItem="Vs4-ty-8WT" secondAttribute="top" constant="9" id="qis-ST-Ana"/>
-                    <constraint firstItem="7rL-iM-GbA" firstAttribute="top" secondItem="gsW-rf-1Qa" secondAttribute="bottom" constant="10" symbolic="YES" id="r8L-GL-b8P"/>
-                    <constraint firstItem="m2c-xQ-cYP" firstAttribute="top" secondItem="7rL-iM-GbA" secondAttribute="bottom" constant="8" symbolic="YES" id="vVM-9H-lWs"/>
+                    <constraint firstItem="TZT-bi-Ojy" firstAttribute="firstBaseline" secondItem="7rL-iM-GbA" secondAttribute="firstBaseline" id="08F-ij-HMB"/>
+                    <constraint firstItem="7rL-iM-GbA" firstAttribute="leading" secondItem="TZT-bi-Ojy" secondAttribute="trailing" constant="8" symbolic="YES" id="0gh-b3-uIq"/>
+                    <constraint firstItem="7rL-iM-GbA" firstAttribute="top" secondItem="gsW-rf-1Qa" secondAttribute="bottom" constant="10" symbolic="YES" id="0sh-5b-pRl"/>
+                    <constraint firstItem="ngM-ZK-hJl" firstAttribute="top" secondItem="PWk-j0-qzB" secondAttribute="bottom" constant="14" id="1LH-Mb-s94"/>
+                    <constraint firstItem="W3d-ai-7zY" firstAttribute="top" secondItem="Vs4-ty-8WT" secondAttribute="top" constant="20" symbolic="YES" id="1ag-5C-cWe"/>
+                    <constraint firstItem="7rL-iM-GbA" firstAttribute="trailing" secondItem="m2c-xQ-cYP" secondAttribute="trailing" id="2rG-K9-x5z"/>
+                    <constraint firstItem="TZT-bi-Ojy" firstAttribute="baseline" secondItem="7rL-iM-GbA" secondAttribute="baseline" id="4F4-OV-Aiw"/>
+                    <constraint firstItem="gsW-rf-1Qa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5z8-e2-yv6" secondAttribute="trailing" constant="8" symbolic="YES" id="4wS-Gs-Plk"/>
+                    <constraint firstItem="gsW-rf-1Qa" firstAttribute="trailing" secondItem="7rL-iM-GbA" secondAttribute="trailing" id="6yh-oh-m5d"/>
+                    <constraint firstItem="W3d-ai-7zY" firstAttribute="leading" secondItem="Vs4-ty-8WT" secondAttribute="leading" constant="20" symbolic="YES" id="BFS-E4-Wp6"/>
+                    <constraint firstItem="gsW-rf-1Qa" firstAttribute="leading" secondItem="7rL-iM-GbA" secondAttribute="leading" id="Bti-Hn-l6O"/>
+                    <constraint firstItem="5z8-e2-yv6" firstAttribute="leading" secondItem="TZT-bi-Ojy" secondAttribute="leading" constant="14" id="E0j-wT-ocb"/>
+                    <constraint firstAttribute="trailing" secondItem="gsW-rf-1Qa" secondAttribute="trailing" constant="39" id="Jna-Ya-usm"/>
+                    <constraint firstItem="PWk-j0-qzB" firstAttribute="trailing" secondItem="RiE-Ya-crf" secondAttribute="trailing" id="RQB-rW-HT3"/>
+                    <constraint firstAttribute="trailing" secondItem="hnv-ij-mLE" secondAttribute="trailing" constant="20" symbolic="YES" id="T4B-kn-0a2"/>
+                    <constraint firstItem="5z8-e2-yv6" firstAttribute="baseline" secondItem="gsW-rf-1Qa" secondAttribute="baseline" id="UNE-yT-XVD"/>
+                    <constraint firstItem="W3d-ai-7zY" firstAttribute="leading" secondItem="PWk-j0-qzB" secondAttribute="leading" id="W6g-aX-yO1"/>
+                    <constraint firstItem="5z8-e2-yv6" firstAttribute="firstBaseline" secondItem="gsW-rf-1Qa" secondAttribute="firstBaseline" id="WR2-sF-GAX"/>
+                    <constraint firstItem="m2c-xQ-cYP" firstAttribute="top" secondItem="7rL-iM-GbA" secondAttribute="bottom" constant="11" id="ZPA-9z-eZA"/>
+                    <constraint firstItem="W3d-ai-7zY" firstAttribute="centerY" secondItem="hnv-ij-mLE" secondAttribute="centerY" id="Zzo-dK-ElP"/>
+                    <constraint firstItem="PWk-j0-qzB" firstAttribute="top" secondItem="hnv-ij-mLE" secondAttribute="bottom" constant="25" id="cFh-OR-qhQ"/>
+                    <constraint firstItem="ngM-ZK-hJl" firstAttribute="leading" secondItem="RiE-Ya-crf" secondAttribute="leading" id="eGz-wb-JDm"/>
+                    <constraint firstItem="m2c-xQ-cYP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Vs4-ty-8WT" secondAttribute="leading" constant="20" symbolic="YES" id="f5T-Rc-0qZ"/>
+                    <constraint firstItem="hnv-ij-mLE" firstAttribute="trailing" secondItem="PWk-j0-qzB" secondAttribute="trailing" id="hdf-B9-oUD"/>
+                    <constraint firstItem="5z8-e2-yv6" firstAttribute="leading" secondItem="Vs4-ty-8WT" secondAttribute="leading" constant="53" id="ijA-fh-0Dk"/>
+                    <constraint firstItem="gsW-rf-1Qa" firstAttribute="top" secondItem="RiE-Ya-crf" secondAttribute="bottom" constant="12" id="nkJ-Pp-OMz"/>
+                    <constraint firstItem="PWk-j0-qzB" firstAttribute="leading" secondItem="ngM-ZK-hJl" secondAttribute="leading" id="oMH-6O-zXy"/>
+                    <constraint firstItem="hnv-ij-mLE" firstAttribute="leading" secondItem="W3d-ai-7zY" secondAttribute="trailing" constant="14" id="rZf-ga-uBA"/>
+                    <constraint firstItem="PWk-j0-qzB" firstAttribute="top" secondItem="W3d-ai-7zY" secondAttribute="bottom" constant="20" id="slM-lY-bUT"/>
+                    <constraint firstAttribute="bottom" secondItem="m2c-xQ-cYP" secondAttribute="bottom" constant="20" symbolic="YES" id="uJU-6D-dak"/>
+                    <constraint firstItem="RiE-Ya-crf" firstAttribute="top" secondItem="ngM-ZK-hJl" secondAttribute="bottom" constant="10" id="uew-x3-m2B"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ngM-ZK-hJl" secondAttribute="trailing" constant="20" symbolic="YES" id="ztQ-NJ-VZp"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="-120.5" y="-642.5"/>
+            <point key="canvasLocation" x="-68" y="-603"/>
         </window>
         <viewController id="9du-S6-caC" customClass="AddFlightViewController" customModule="TodayFlights" customModuleProvider="target">
             <connections>
@@ -221,5 +277,15 @@
             </connections>
         </viewController>
         <customObject id="ikq-LY-uOu" customClass="SUUpdater"/>
+        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="i3Z-tz-GXx">
+            <rect key="frame" x="0.0" y="0.0" width="92" height="16"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <textFieldCell key="cell" selectable="YES" title="Multiline Label" id="pgh-MX-Bwh">
+                <font key="font" usesAppearanceFont="YES"/>
+                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+            </textFieldCell>
+            <point key="canvasLocation" x="-383" y="-593"/>
+        </textField>
     </objects>
 </document>

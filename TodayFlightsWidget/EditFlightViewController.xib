@@ -15,14 +15,11 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="300" height="115"/>
+            <rect key="frame" x="0.0" y="0.0" width="300" height="188"/>
             <subviews>
                 <textField verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxg-cT-PXv">
-                    <rect key="frame" x="26" y="19" width="248" height="22"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="22" id="7QO-DD-8gp"/>
-                    </constraints>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Route Number" drawsBackground="YES" usesSingleLineMode="YES" id="s3K-wG-LeQ">
+                    <rect key="frame" x="131" y="20" width="143" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="s3K-wG-LeQ">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -32,22 +29,19 @@
                     </connections>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7MJ-MG-pKu">
-                    <rect key="frame" x="24" y="82" width="111" height="17"/>
+                    <rect key="frame" x="24" y="155" width="65" height="17"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="17" id="AZh-5O-7Yd"/>
+                        <constraint firstAttribute="height" constant="17" id="moY-E7-JwT"/>
                     </constraints>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Flight Information" id="XyM-Jr-UwC">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Edit Flight" id="XyM-Jr-UwC">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hs4-oF-OJe">
-                    <rect key="frame" x="26" y="51" width="248" height="22"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="22" id="K67-Qs-vQp"/>
-                    </constraints>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Airline Code" drawsBackground="YES" usesSingleLineMode="YES" id="nL8-tb-syt">
+                    <rect key="frame" x="131" y="52" width="143" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="nL8-tb-syt">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -56,18 +50,62 @@
                         <outlet property="delegate" destination="-2" id="yIt-hl-SLA"/>
                     </connections>
                 </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4h2-ps-nuQ">
+                    <rect key="frame" x="24" y="55" width="101" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="MOc-AS-k1Y"/>
+                        <constraint firstAttribute="width" constant="97" id="N14-Rr-rjT"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Airline Code" id="vXW-eA-S1K">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H4c-3g-D8C">
+                    <rect key="frame" x="24" y="23" width="101" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="QXr-kC-SpB"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Route Number" id="etI-xE-cNV">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="YSQ-fA-PWR">
+                    <rect key="frame" x="24" y="92" width="252" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="Hrv-1a-adj"/>
+                    </constraints>
+                    <textFieldCell key="cell" selectable="YES" title="Enter a flight number – composed of the two character Airline Code and one to four digit Route Number." id="hAg-xc-aNx">
+                        <font key="font" metaFont="message" size="11"/>
+                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
             </subviews>
             <constraints>
-                <constraint firstItem="Gxg-cT-PXv" firstAttribute="top" secondItem="hs4-oF-OJe" secondAttribute="bottom" constant="10" symbolic="YES" id="13B-gL-gE3"/>
-                <constraint firstItem="hs4-oF-OJe" firstAttribute="leading" secondItem="Gxg-cT-PXv" secondAttribute="leading" id="8Rg-d5-fk5"/>
-                <constraint firstItem="hs4-oF-OJe" firstAttribute="trailing" secondItem="Gxg-cT-PXv" secondAttribute="trailing" id="D6f-4c-pd0"/>
-                <constraint firstItem="7MJ-MG-pKu" firstAttribute="leading" secondItem="hs4-oF-OJe" secondAttribute="leading" id="JWg-Y6-f0J"/>
-                <constraint firstItem="7MJ-MG-pKu" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="16" id="P37-26-hpg"/>
-                <constraint firstItem="hs4-oF-OJe" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="bei-o0-mDY"/>
-                <constraint firstItem="7MJ-MG-pKu" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="26" id="h6f-cc-ACX"/>
-                <constraint firstItem="hs4-oF-OJe" firstAttribute="top" secondItem="7MJ-MG-pKu" secondAttribute="bottom" constant="9" id="w3R-jq-Udc"/>
+                <constraint firstItem="YSQ-fA-PWR" firstAttribute="trailing" secondItem="hs4-oF-OJe" secondAttribute="trailing" id="2ic-fS-BLb"/>
+                <constraint firstItem="H4c-3g-D8C" firstAttribute="firstBaseline" secondItem="Gxg-cT-PXv" secondAttribute="firstBaseline" id="76f-Fi-K04"/>
+                <constraint firstItem="YSQ-fA-PWR" firstAttribute="top" secondItem="7MJ-MG-pKu" secondAttribute="bottom" constant="15" id="8hw-iH-mPD"/>
+                <constraint firstItem="hs4-oF-OJe" firstAttribute="trailing" secondItem="Gxg-cT-PXv" secondAttribute="trailing" id="ATQ-Lk-PXa"/>
+                <constraint firstItem="Gxg-cT-PXv" firstAttribute="top" secondItem="hs4-oF-OJe" secondAttribute="bottom" constant="10" symbolic="YES" id="DE3-lG-sdd"/>
+                <constraint firstItem="7MJ-MG-pKu" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="26" id="DGm-Hh-MiN"/>
+                <constraint firstItem="hs4-oF-OJe" firstAttribute="leading" secondItem="4h2-ps-nuQ" secondAttribute="trailing" constant="8" symbolic="YES" id="Eae-T3-ziQ"/>
+                <constraint firstItem="7MJ-MG-pKu" firstAttribute="leading" secondItem="YSQ-fA-PWR" secondAttribute="leading" id="F6x-1y-9gn"/>
+                <constraint firstAttribute="bottom" secondItem="Gxg-cT-PXv" secondAttribute="bottom" constant="20" symbolic="YES" id="Hyd-MD-orj"/>
+                <constraint firstItem="YSQ-fA-PWR" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="Upc-Hx-jKI"/>
+                <constraint firstItem="4h2-ps-nuQ" firstAttribute="leading" secondItem="H4c-3g-D8C" secondAttribute="leading" id="cXz-Xs-zWa"/>
+                <constraint firstItem="4h2-ps-nuQ" firstAttribute="firstBaseline" secondItem="hs4-oF-OJe" secondAttribute="firstBaseline" id="dGc-i9-s3I"/>
+                <constraint firstItem="H4c-3g-D8C" firstAttribute="baseline" secondItem="Gxg-cT-PXv" secondAttribute="baseline" id="drT-7l-5ST"/>
+                <constraint firstItem="hs4-oF-OJe" firstAttribute="leading" secondItem="Gxg-cT-PXv" secondAttribute="leading" id="lHE-di-t7E"/>
+                <constraint firstItem="4h2-ps-nuQ" firstAttribute="baseline" secondItem="hs4-oF-OJe" secondAttribute="baseline" id="mHA-xL-b9k"/>
+                <constraint firstItem="YSQ-fA-PWR" firstAttribute="leading" secondItem="4h2-ps-nuQ" secondAttribute="leading" id="nUB-ca-6to"/>
+                <constraint firstItem="Gxg-cT-PXv" firstAttribute="leading" secondItem="H4c-3g-D8C" secondAttribute="trailing" constant="8" symbolic="YES" id="p7v-3q-2bY"/>
+                <constraint firstItem="hs4-oF-OJe" firstAttribute="top" secondItem="YSQ-fA-PWR" secondAttribute="bottom" constant="18" id="pyS-p5-Pbr"/>
             </constraints>
-            <point key="canvasLocation" x="0.0" y="-20"/>
+            <point key="canvasLocation" x="0.0" y="16"/>
         </customView>
         <userDefaultsController id="D2u-xT-Rg6"/>
     </objects>

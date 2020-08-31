@@ -42,4 +42,12 @@ class AddFlightViewController: NSViewController, NSTextFieldDelegate {
         defaults.setValue(routeNumberTextField.stringValue, forKey: "routeNumber")
     }
     
+    @IBAction func helpButtonClicked(_ sender: NSButton) {
+        let helpUrlString = "https://support.apple.com/guide/mac-help/mchl2fb1258f/mac#mchl81797ce0"
+        guard let url = URL(string: helpUrlString) else {
+            return
+        }
+        
+        NSWorkspace.shared.open(url)
+    }
 }
