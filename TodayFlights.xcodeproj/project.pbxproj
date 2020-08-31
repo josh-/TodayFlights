@@ -12,6 +12,8 @@
 		0350634F24FA32DC00E71269 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0350634D24FA32DB00E71269 /* Info.plist */; };
 		0350635024FA32F000E71269 /* TodayFlightsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0350634C24FA32DB00E71269 /* TodayFlightsTests.m */; };
 		0350635124FA343400E71269 /* FlightUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0388D66D24ED4A90007BA51E /* FlightUtilities.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		035063F524FD081300E71269 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035063F324FD06D600E71269 /* Sparkle.framework */; };
+		035063F624FD081300E71269 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 035063F324FD06D600E71269 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0351E13224F9FCF800E9976F /* FirstRunViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0351E12B24F9FCF800E9976F /* FirstRunViewController.xib */; };
 		0351E13324F9FCF800E9976F /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0351E12D24F9FCF800E9976F /* TodayViewController.m */; };
 		0351E13424F9FCF800E9976F /* FirstRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0351E12E24F9FCF800E9976F /* FirstRunViewController.m */; };
@@ -22,8 +24,6 @@
 		0351E15E24FA275700E9976F /* DemoWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0351E15C24FA270B00E9976F /* DemoWindowController.swift */; };
 		03781E211DF987B200EF1ABF /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03781E201DF987B200EF1ABF /* AppKit.framework */; };
 		03781E231DF987B600EF1ABF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03781E221DF987B600EF1ABF /* Cocoa.framework */; };
-		037BFBD71E4D68150022A75B /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037BFBD61E4D68150022A75B /* Sparkle.framework */; };
-		037BFBD91E4D686F0022A75B /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 037BFBD61E4D68150022A75B /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		037BFBDC1E4D776D0022A75B /* dsa_pub.pem in CopyFiles */ = {isa = PBXBuildFile; fileRef = 037BFBDB1E4D776D0022A75B /* dsa_pub.pem */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0388D66E24ED4A90007BA51E /* FlightUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0388D66D24ED4A90007BA51E /* FlightUtilities.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		0388D71F24F74A21007BA51E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036D7BF91DFAB0ED00B28048 /* NotificationCenter.framework */; };
@@ -70,7 +70,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				037BFBD91E4D686F0022A75B /* Sparkle.framework in CopyFiles */,
+				035063F624FD081300E71269 /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +92,7 @@
 		0350634124FA32B900E71269 /* TodayFlightsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayFlightsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0350634C24FA32DB00E71269 /* TodayFlightsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayFlightsTests.m; sourceTree = "<group>"; };
 		0350634D24FA32DB00E71269 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		035063F324FD06D600E71269 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Carthage/Build/Mac/Sparkle.framework; sourceTree = "<group>"; };
 		0351E12924F9FCCF00E9976F /* TodayFlightsWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = TodayFlightsWidget.entitlements; path = TodayFlightsWidget/TodayFlightsWidget.entitlements; sourceTree = SOURCE_ROOT; };
 		0351E12A24F9FCF800E9976F /* FirstRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstRunViewController.h; path = TodayFlightsWidget/FirstRunViewController.h; sourceTree = SOURCE_ROOT; };
 		0351E12B24F9FCF800E9976F /* FirstRunViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FirstRunViewController.xib; path = TodayFlightsWidget/FirstRunViewController.xib; sourceTree = SOURCE_ROOT; };
@@ -109,7 +110,6 @@
 		03781DDF1DF9825800EF1ABF /* TodayFlights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayFlights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03781E201DF987B200EF1ABF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		03781E221DF987B600EF1ABF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		037BFBD61E4D68150022A75B /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		037BFBDB1E4D776D0022A75B /* dsa_pub.pem */ = {isa = PBXFileReference; lastKnownFileType = text; name = dsa_pub.pem; path = ../TodayFlights/dsa_pub.pem; sourceTree = "<group>"; };
 		0388D66D24ED4A90007BA51E /* FlightUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FlightUtilities.framework; path = /System/Library/PrivateFrameworks/FlightUtilities.framework; sourceTree = "<group>"; };
 		0388D6A124ED53AF007BA51E /* FUFlightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUFlightViewController.h; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 			files = (
 				03781E231DF987B600EF1ABF /* Cocoa.framework in Frameworks */,
 				03781E211DF987B200EF1ABF /* AppKit.framework in Frameworks */,
-				037BFBD71E4D68150022A75B /* Sparkle.framework in Frameworks */,
+				035063F524FD081300E71269 /* Sparkle.framework in Frameworks */,
 				03E1CD111E4C22510009E28F /* MapKit.framework in Frameworks */,
 				0388D66E24ED4A90007BA51E /* FlightUtilities.framework in Frameworks */,
 			);
@@ -222,8 +222,8 @@
 		03781E1F1DF987B200EF1ABF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				035063F324FD06D600E71269 /* Sparkle.framework */,
 				0388D66D24ED4A90007BA51E /* FlightUtilities.framework */,
-				037BFBD61E4D68150022A75B /* Sparkle.framework */,
 				03E1CD101E4C22510009E28F /* MapKit.framework */,
 				036D7BF91DFAB0ED00B28048 /* NotificationCenter.framework */,
 				03781E221DF987B600EF1ABF /* Cocoa.framework */,
@@ -696,6 +696,7 @@
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = TodayFlights/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -723,6 +724,7 @@
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = TodayFlights/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
