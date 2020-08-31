@@ -17,8 +17,13 @@ TodayFlights is a Notification Center widget that allows you to monitor flights 
 2. Launch the TodayFlights app
 3. Open [Notification Center](https://support.apple.com/HT204079), select "Today" and click "1 new" at the bottom of the panel
 4. Add the TodayFlights widget by clicking on the plus icon (+)
+5. Start tracking a flight number by hovering over the widget and clicking the info button that appears in the top-right corner
 
-Customise the flight being tracked by hovering over the widget and clicking the info button that appears in the top-right corner.
+A flight number is composed of the two character Airline Code and one to four digit Route Number, for example, for the flight number `MH129`:
+
+|Airline Code|Route Number|
+|-|-|
+|`MH`|`129`|
 
 ## TODO
 
