@@ -325,6 +325,7 @@
 				036D7C0D1DFAB0ED00B28048 /* Embed App Extensions */,
 				037BFBD81E4D68620022A75B /* CopyFiles */,
 				037BFBDA1E4D775C0022A75B /* CopyFiles */,
+				0308B3252508F6E50090D507 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -444,6 +445,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0308B3252508F6E50090D507 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "codesign --verbose --force --deep -o runtime \\\n--sign \"${EXPANDED_CODE_SIGN_IDENTITY_NAME}\" \\\n\"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Contents/Frameworks/Sparkle.framework/Versions/A/Resources/AutoUpdate.app\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0350633D24FA32B900E71269 /* Sources */ = {
